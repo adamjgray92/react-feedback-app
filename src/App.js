@@ -1,3 +1,19 @@
+import Header from './components/Header';
+import FeedbackList from './components/FeedbackList';
+import FeedbackStats from './components/FeedbackStats';
+import FeedbackForm from './components/FeedbackForm';
+import AboutIconLink from './components/AboutIconLink';
+
 export default function App() {
-  return <h1>App</h1>;
+  return (
+    <>
+      <Header />
+      <div className='container'>
+        <FeedbackForm />
+        <FeedbackStats />
+        <FeedbackList />
+        <AboutIconLink />
+      </div>
+    </>
+  );
 }
